@@ -1,0 +1,15 @@
+{
+    "extends": ["airbnb-base"],
+    "env": {
+      "node": true,
+      "es6": true,
+      "browser": true,
+      "jest/globals": true
+    },
+    "rules": {
+      "no-console": "off",
+      "class-methods-use-this": "off",
+      "import/extensions": "off",
+      "linebreak-style": 0
+    }
+  }

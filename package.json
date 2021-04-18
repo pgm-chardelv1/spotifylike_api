@@ -1,0 +1,54 @@
+{
+  "name": "spotify-api",
+  "version": "1.0.0",
+  "description": "A RESTful Music API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js",
+    "test": "cross-env NODE_ENV=test jest --detectOpenHandles --forceExit --coverage",
+    "seeder": "node src/utils/seedUsers.js"
+  },
+  "jest": {
+    "transform": {
+      "\\.[jt]sx?$": "babel-jest"
+    }
+  },
+  "keywords": [
+    "API",
+    "Express",
+    "Node",
+    "JWT"
+  ],
+  "author": "Charlotte Delvaux",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.13.12",
+    "babel-jest": "^26.6.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "faker": "^5.5.2",
+    "jest": "^26.6.3",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.3",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "sqlite3": "^5.0.2",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
+  }
+}
